@@ -34,3 +34,8 @@ React はリクエスト毎にブラウザで JS が実行されて、HTML を�
 ## Tailwind 公式ドキュメント
 
 https://tailwindcss.com/docs
+
+## getStaticProps
+
+間らず Server side で実行される
+pages 内でのみ使用可能

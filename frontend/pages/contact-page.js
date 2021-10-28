@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Image from "next/images";
+import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -9,12 +9,20 @@ const Contact = () => {
           <p className="font-bold">Contact Info</p>
         </div>
         <div className="flex justify-center mt-4">
-          <image
+          <Image
             className="rounded-full"
             src="/avatar.jpg"
             width={60}
-            alt={60}
+            height={60}
+            alt="Avatar"
           />
+        </div>
+        <div className="mt-4">
+          <p className="font-bold">Address</p>
+          <p className="text-xs mt-2 text-gray-600">city</p>
+          <p className="font-bold mt-3">E-mail</p>
+          <p className="font-bold mt-3">Phone</p>
+          <p className="text-xs mt-2 text-gray-600">000-123-456</p>
         </div>
       </div>
     </Layout>
