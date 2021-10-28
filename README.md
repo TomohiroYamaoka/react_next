@@ -7,8 +7,6 @@ npm i tailwindcss
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest  
 npx tailwindcss init -p
 
-## Footer やメニューなどの共通の項目は Layout component として管理をする。
-
 ## Tailwind の設定をする
 
 https://tailwindcss.com/docs/guides/nextjs
@@ -39,3 +37,9 @@ https://tailwindcss.com/docs
 
 間らず Server side で実行される
 pages 内でのみ使用可能
+
+## Dynamic routes(詳細ページの pre-rendering)
+
+getStaticPaths で全部の id を取得する  
+getStaticProps で個別の ID を取得する  
+取得したデータを props に渡してレンダリングを実行する。
